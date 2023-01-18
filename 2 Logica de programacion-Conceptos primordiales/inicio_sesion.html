@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<script>
+
+    var nombre = "jennifer";
+    var pass = "321";
+    
+    var intentos = 3;
+    var contador = 1; 
+
+    while(contador <= intentos){
+
+        var nombreIngresado = prompt("Ingrese su usuario");
+        var passIngresado = prompt("Ingrese su contraseña");
+
+        if( nombre == nombreIngresado && pass == passIngresado ) {
+            alert("Bienvenido al sistema " + nombreIngresado);
+            contador = intentos;
+        } 
+        else {
+            if(contador == 3){
+            alert("Agotaste el nuemro de intentos");
+            }
+            else{
+                alert("inicio de sesión inválido. Favor intente de nuevo");
+            }
+            
+        }
+        contador++;
+    }
+</script>

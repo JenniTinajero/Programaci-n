@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<h1>CALCULAR IMC</h1>
+<script>
+	function saltarLinea(){
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase){
+		document.write(frase);
+		saltarLinea();
+	}
+
+	function calcularImc(peso1,altura1,nombre1,peso2,altura2,nombre2){
+		imc1 = peso1 / (altura1 * altura1);
+		imc2 = peso2 / (altura2 * altura2);
+
+		imprimir("El promedio de IMC calculado de " + nombre1 +" y "+ nombre2 +  " es " + (imc1+imc2)/2);
+	}
+
+	calcularImc(73,1.60,"Roberto",80,1.65,"Antonio");
+</script>

@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<h1>MEDIA EDADES DE UNA FAMILIA</h1>
+<script>
+	function saltarLinea(){
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase){
+		document.write(frase);
+		saltarLinea();
+	}
+
+var miembrosFamilia = parseInt(prompt("Ingrese la cantidad de miembros de la familia"));
+var contador = 1;
+var totalEdades = 0;
+
+	while(contador <= miembrosFamilia){
+		edad = parseInt(prompt("Ingrese la edad del familiar"));
+		contador++;
+		totalEdades = totalEdades + edad;
+	}
+
+	mediaEdades = totalEdades / miembrosFamilia;
+	imprimir("El total de famialiares es: " + miembrosFamilia);
+	imprimir("La suma de las edades de los famialiares es: " + totalEdades);
+	imprimir("La media de las edades de los famialiares es: " + mediaEdades);
+</script>

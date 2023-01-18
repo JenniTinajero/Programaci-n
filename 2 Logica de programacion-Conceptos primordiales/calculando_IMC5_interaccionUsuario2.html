@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<h1>CALCULAR IMC</h1>
+<script>
+	function saltarLinea(){
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase){
+		document.write(frase);
+		saltarLinea();
+	}
+
+	function calcularImc(peso,altura){
+		return (peso / (altura * altura));
+	}
+
+	nombre = prompt("Ingrese su nombre")
+	pesoinformado = prompt(nombre + ", ingrese su peso")
+	alturainformada = prompt(nombre + ", ingrese su altura")
+
+	imcCalculado = calcularImc(pesoinformado,alturainformada);
+	imprimir(nombre + ", su IMC calculado es: " + imcCalculado);
+	
+</script>
